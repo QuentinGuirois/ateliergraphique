@@ -1,0 +1,31 @@
+
+---Downloaded files---
+The import files for: keira Demo Data were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://atelier-graphique-trombone.fr
+Data file = A:\atelier-graphique-trombone.fr/wp-content/uploads/2022/07/demo-content-import-file_2022-07-05__16-21-33.xml
+Widget file = A:\atelier-graphique-trombone.fr/wp-content/uploads/2022/07/demo-widgets-import-file_2022-07-05__16-21-33.json
+Customizer file = A:\atelier-graphique-trombone.fr/wp-content/uploads/2022/07/demo-customizer-import-file_2022-07-05__16-21-33.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+MailChimp Form : 
+
+Mailchimp Sign-Up Form - No Title - Imported
+
+Blog Sidebar : 
+
+Rechercher - No Title - Imported
+Catégories - Categories - Imported
+Keira Recent Posts Thumbnail - Recent posts - Imported
+Nuage d’étiquettes - Tags - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

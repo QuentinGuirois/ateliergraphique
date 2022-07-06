@@ -1,0 +1,24 @@
+/*
+Theme Name: Keira child
+Template: keira
+Author: Quentin
+Author URI: https://votre-futur-dev.fr
+Description: Base Atelier Trombone
+Version: 0.1.0.1657046197
+Updated: 2022-07-05 20:36:37
+
+*/
+
+.logo-intro {
+    max-width: 80vh;
+    filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.493));
+    z-index: 999999999999;
+}
+.overlay-1 {
+    background: #d2c28b !important;
+}
+
+.overlay-1 .screen {
+    color:#fff !important;
+    opacity:0.1;
+}
