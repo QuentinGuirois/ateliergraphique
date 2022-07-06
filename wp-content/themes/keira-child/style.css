@@ -8,11 +8,61 @@ Version: 0.1.0.1657046197
 Updated: 2022-07-05 20:36:37
 
 */
+@font-face {font-family: "Altobello DEMO"; src: url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.eot"); src: url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.woff") format("woff"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.svg#Altobello DEMO") format("svg"); }
 
+body {
+    font-family: 'adelle', serif !important;
+}
+
+#header:before {
+    background: none !important;
+}
+.header-content span{
+    font-family: 'adelle', serif !important;
+    text-transform: none !important;
+}
+.intro-profile-and-button {
+    display:flex !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:48px 96px;
+    transition: 0.8s ease-out;
+    display: block;
+    overflow: hidden;
+    align-items: center;
+}
+.intro-profile-and-button:hover .intro__portrait {
+   transform: rotateY(180deg);
+   transition: 0.8s ease-out;
+}
+.intro__portrait {
+    
+    width:200px;
+    transition: 0.8s ease-out;
+    cursor: crosshair;
+}
 .logo-intro {
     max-width: 80vh;
     filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.493));
     z-index: 999999999999;
+}
+
+.myBtn {
+    position: relative !important;
+    border: none !important;
+    top:auto !important;
+    left:auto !important;
+    transform: translate(0,0) !important;
+    padding:0;
+    font-family: 'Altobello DEMO', monospace !important;
+    text-transform: none !important;
+    font-size: 3rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 4px !important;
+    line-height: 1 !important;
+    
 }
 .overlay-1 {
     background: #d2c28b !important;
@@ -21,4 +71,27 @@ Updated: 2022-07-05 20:36:37
 .overlay-1 .screen {
     color:#fff !important;
     opacity:0.1;
+}
+.subtitle, .subtitle::before, .paye {
+    color: #004362 !important;
+}
+.subtitle::before, li::before {
+    background:#0043628b !important;
+}
+#typed-slide-1 {
+    font-family: 'Altobello DEMO', monospace !important;
+    text-transform: none !important;
+    font-size: 4rem !important;
+}
+.textfull {
+    color:#fff !important;
+    -webkit-text-stroke: 0 !important;
+    font-weight: 500 !important;
+}
+
+
+@media (max-width: 480px) {
+    .intro-profile-and-button {
+        flex-direction: column;
+    }
 }

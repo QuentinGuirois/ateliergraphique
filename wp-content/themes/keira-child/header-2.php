@@ -1,94 +1,96 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
-		<?php wp_head(); ?>
-	</head>
-    <body <?php body_class(); ?>>
-        
-        <?php wp_body_open(); ?>
 
-        <section class="site-content">
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/fnp2bax.css">
+    <link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
+    <?php wp_head(); ?>
+</head>
 
-            <?php 
-			    if(get_theme_mod( 'wp_cursor_show_hide') === 'show' ) { ?>
+<body <?php body_class(); ?>>
 
-					<!-- start cursor -->
+    <?php wp_body_open(); ?>
 
-                    <div class="cursor"></div>
+    <section class="site-content">
 
-                   <!-- End  Cursor -->
+        <?php
+        if (get_theme_mod('wp_cursor_show_hide') === 'show') { ?>
 
-				<?php } else { ?>
-				<?php } ?>
+            <!-- start cursor -->
 
-            <!-- start section navbar -->
+            <div class="cursor"></div>
 
-            <div class="navbar-wrapper none-sq-price">
-                <div class="navfixed">
-                    <div class="container">
-                        <div class="fullcontainer">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mylogo">
-                                        <a class="logo logo-light" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                                            <?php
-                                            if (has_custom_logo()) {
-                                                echo '<img src="' . wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] . '" alt="' .  get_bloginfo('name') . '">';
-                                            } else {
-                                                echo get_bloginfo('name');
-                                            }
-                                            ?>            
-                                        </a>
-                                    </div>
-                                    <div class="iconfix">
-                                        <a href="#" class="cd-nav-trigger" onclick="return false;">Menu<span class="cd-icon"></span></a>
-                                    </div>
+            <!-- End  Cursor -->
+
+        <?php } else { ?>
+        <?php } ?>
+
+        <!-- start section navbar -->
+
+        <div class="navbar-wrapper none-sq-price">
+            <div class="navfixed">
+                <div class="container">
+                    <div class="fullcontainer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mylogo">
+                                    <a class="logo logo-light" href="<?php echo esc_url(home_url('/')); ?>">
+                                        <?php
+                                        if (has_custom_logo()) {
+                                            echo '<img src="' . wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] . '" alt="' .  get_bloginfo('name') . '">';
+                                        } else {
+                                            echo get_bloginfo('name');
+                                        }
+                                        ?>
+                                    </a>
+                                </div>
+                                <div class="iconfix">
+                                    <a href="#" class="cd-nav-trigger" onclick="return false;">Menu<span class="cd-icon"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mainmenunav">
-                    <div class="cd-primary-nav">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <nav class="navbar navbar-expand-lg">
-                                        <div class="navbar-collapse">
-                                           <?php keira_menu(); ?>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="navinfo">
-                                        <div class="navfixinfo">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="testtest">
-                                                        <div class="contact-block">
-                                                            <h4 class="maintitle"><?php echo get_theme_mod( 'wp_menu_info_email_text', 'EMAIL' ); ?></h4>
-                                                            <span class="email"><?php echo get_theme_mod( 'wp_menu_info_email', 'Support@example.com' ); ?></span>
-                                                        </div>
+            </div>
+            <div class="mainmenunav">
+                <div class="cd-primary-nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="navbar-collapse">
+                                        <?php keira_menu(); ?>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="navinfo">
+                                    <div class="navfixinfo">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="testtest">
+                                                    <div class="contact-block">
+                                                        <h4 class="maintitle"><?php echo get_theme_mod('wp_menu_info_email_text', 'EMAIL'); ?></h4>
+                                                        <span class="email"><?php echo get_theme_mod('wp_menu_info_email', 'Support@example.com'); ?></span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="testtest">
-                                                        <div class="contact-block">
-                                                            <h4 class="maintitle"><?php echo get_theme_mod( 'wp_menu_info_tel_text', 'CALL US' ); ?></h4>
-                                                            <span class="tel"><?php echo get_theme_mod( 'wp_menu_info_tel', '700 001 70 16' ); ?></span>
-                                                        </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="testtest">
+                                                    <div class="contact-block">
+                                                        <h4 class="maintitle"><?php echo get_theme_mod('wp_menu_info_tel_text', 'CALL US'); ?></h4>
+                                                        <span class="tel"><?php echo get_theme_mod('wp_menu_info_tel', '700 001 70 16'); ?></span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="testtest">
-                                                        <div class="contact-block">
-                                                            <h4 class="maintitle"><?php echo get_theme_mod( 'wp_menu_info_address_text', 'ADDRESS' ); ?></h4>
-                                                            <span class="address"><?php echo get_theme_mod( 'wp_menu_info_address', '405, Royal Square, Nr.' ); ?></span>
-                                                        </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="testtest">
+                                                    <div class="contact-block">
+                                                        <h4 class="maintitle"><?php echo get_theme_mod('wp_menu_info_address_text', 'ADDRESS'); ?></h4>
+                                                        <span class="address"><?php echo get_theme_mod('wp_menu_info_address', '405, Royal Square, Nr.'); ?></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -100,62 +102,66 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- End section navbar -->
+        <!-- End section navbar -->
 
-            <?php
-                if(get_theme_mod( 'wp_preloader_show_hide') === 'show' ) { ?>
-            
-                    <!-- start section overlay site web -->
+        <?php
+        if (get_theme_mod('wp_preloader_show_hide') === 'show') { ?>
 
-                    <div class="overlay-1">
-                        <p class="screen"><?php echo get_bloginfo('name') ?></p>
-                        <div class="intro">
-                        <div class="mylogo">
-                                        <a class="logo logo-light" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                                            <?php
-                                            if (has_custom_logo()) {
-                                                echo '<img class="logo-intro" src="' . wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] . '" alt="' .  get_bloginfo('name') . '">';
-                                            } else {
-                                                echo get_bloginfo('name');
-                                            }
-                                            ?>            
-                                        </a>
-                                    </div>
-                            <button class="myBtn" onclick="fadeOut()"><?php echo get_theme_mod( 'wp_preloader_button_text' , get_bloginfo('name') ); ?></button>
-                        </div>
+            <!-- start section overlay site web -->
+
+            <div class="overlay-1">
+                <p class="screen"><?php echo get_bloginfo('name') ?></p>
+                <div class="intro">
+                    <div class="intro__mylogo">
+                        <a class="logo logo-light" href="<?php echo esc_url(home_url('/')); ?>">
+                            <?php
+                            if (has_custom_logo()) {
+                                echo '<img class="logo-intro" src="' . wp_get_attachment_image_src(get_theme_mod('custom_logo'), 'full')[0] . '" alt="' .  get_bloginfo('name') . '">';
+                            } else {
+                                echo get_bloginfo('name');
+                            }
+                            ?>
+                        </a>
                     </div>
-                    <div class="overlay-2">
+                    <div class="intro-profile-and-button">
+                    <button class="myBtn" onclick="fadeOut()"><?php echo get_theme_mod('wp_preloader_button_text', get_bloginfo('name')); ?></button>
+                        <img class="intro__portrait" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Portrait2.svg" alt="Portrait Graphiste"/> 
                     </div>
+                </div>
+            </div>
+            <div class="overlay-2">
+            </div>
 
-                    <!-- End section overlay site web -->
+            <!-- End section overlay site web -->
 
-                <?php } else { ?>
+        <?php } else { ?>
 
-                <?php } ?>
+        <?php } ?>
 
-            <?php
-                if(get_theme_mod( 'wp_follow_show_hide') === 'show' ) { ?>
+        <?php
+        if (get_theme_mod('wp_follow_show_hide') === 'show') { ?>
 
-                    <!-- start section header follow -->
+            <!-- start section header follow -->
 
-                    <div class="header-follow">
-                        <ul>
-                            <li>
-                                <a class="facebook" href="<?php echo get_theme_mod( 'wp_follow_icon1_link' , '#' ); ?>"><i class="fa <?php echo get_theme_mod( 'wp_follow_icon1_text' , 'fa-facebook' ); ?>"></i></a>
-                            </li>
-                            <li>
-                                <a class="linkedin" href="<?php echo get_theme_mod( 'wp_follow_icon2_link' , '#' ); ?>"><i class="fa <?php echo get_theme_mod( 'wp_follow_icon2_text' , 'fa-linkedin' ); ?>"></i></a>
-                            </li>
-                            <li>
-                                <a class="instagram" href="<?php echo get_theme_mod( 'wp_follow_icon3_link' , '#' ); ?>"><i class="fa <?php echo get_theme_mod( 'wp_follow_icon3_text' , 'fa-instagram' ); ?>"></i></a>
-                            </li>
-                        </ul>
-                        <p><?php echo get_theme_mod( 'wp_follow_text' , 'Follow Me' ); ?></p>
-                    </div>
+            <div class="header-follow">
+                <ul>
+                    <li>
+                        <a class="facebook" href="<?php echo get_theme_mod('wp_follow_icon1_link', '#'); ?>"><i class="fa <?php echo get_theme_mod('wp_follow_icon1_text', 'fa-facebook'); ?>"></i></a>
+                    </li>
+                    <li>
+                        <a class="linkedin" href="<?php echo get_theme_mod('wp_follow_icon2_link', '#'); ?>"><i class="fa <?php echo get_theme_mod('wp_follow_icon2_text', 'fa-linkedin'); ?>"></i></a>
+                    </li>
+                    <li>
+                        <a class="instagram" href="<?php echo get_theme_mod('wp_follow_icon3_link', '#'); ?>"><i class="fa <?php echo get_theme_mod('wp_follow_icon3_text', 'fa-instagram'); ?>"></i></a>
+                    </li>
+                </ul>
+                <p><?php echo get_theme_mod('wp_follow_text', 'Follow Me'); ?></p>
+            </div>
 
-                    <!-- End section header follow -->
+            <!-- End section header follow -->
 
-                <?php } else { ?>
-                    
-                <?php } ?>
+        <?php } else { ?>
+
+        <?php } ?>
