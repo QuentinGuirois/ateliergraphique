@@ -164,7 +164,7 @@ class keira_about_widget extends \Elementor\Widget_Base {
 									</li>
 									<?php endforeach; ?>
 								</ul>
-								<a href="<?php echo esc_url($url) ?>" class="btn draw"><?php echo $settings['buttontext'] ?> <i class="fa fa-angle-right"></i> </a>
+								<a href="<?php echo esc_url($url) ?>" class="btn draw"><?php echo $settings['buttontext'] ?> </a>
 							</div>
 						</div>
 					</div>

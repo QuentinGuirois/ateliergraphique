@@ -79,7 +79,7 @@ class keira_portfolio_title_widget extends \Elementor\Widget_Base {
                 </div>
                 <div class="col-md-6">
                     <div class="allprojecrt r-mb-30">
-                        <a href="<?php echo esc_url($buttonurl) ?>" class="btn draw"><?php echo $settings['buttontext'] ?> <i class="fa fa-angle-right"></i> </a>
+                        <a href="<?php echo esc_url($buttonurl) ?>" class="btn draw"><?php echo $settings['buttontext'] ?> </a>
                     </div>
                 </div>
             </div>

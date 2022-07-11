@@ -13,26 +13,117 @@ Updated: 2022-07-05 20:36:37
 
 @font-face {font-family: "Altobello DEMO"; src: url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.eot"); src: url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.woff") format("woff"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d099cc25c178e21112e9a32b4fc80113.svg#Altobello DEMO") format("svg"); }
 
-.separator, .main-title, body, .header-content span, .title {
+.separator, .main-title, body, .header-content span, .title, .navbar-collapse li a {
     font-family: 'adelle', serif !important;
 }
- .myBtn, #typed-slide-1 {
+ .myBtn, #typed-slide-1, .btn {
     font-family: 'Altobello DEMO', monospace !important;
-}
-body {
-    background-image: none !important;  
-}
-
-.fullcounter {
-    border: 4px solid #004362 !important;
-    background-color: #04212F !important;
-}
-#header:before {
-    background: none !important;
 }
 .header-content span{
     text-transform: none !important;
 }
+
+
+/* COLORS */
+.separator {
+    color: #fff !important;
+}
+.subtitle, .subtitle::before, .paye {
+    color: #004362 !important;
+}
+.overlay-1 .screen {
+    color:#fff !important;
+    opacity:0.05 !important;
+}
+.navbar-wrapper .mainmenunav .navbar .navbar-collapse li a:hover {
+    color: #004362 !important;
+}
+.section-title h2 {
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-weight: lighter !important;
+}
+.textfull, .navbar-wrapper .mainmenunav .navbar .navbar-collapse li a {
+    color:#fff !important;
+    -webkit-text-stroke: 0 !important;
+    font-weight: 500 !important;
+}
+
+/* BACKGROUNDS */
+.about-img::before {
+    display: none !important;
+}
+.line-stripe-0, .line-stripe-1, .line-stripe-2, .line-stripe-3, .line-stripe-4 {
+    
+    background: rgba(255, 255, 255, 0.008) !important;
+}
+.team .teamiteam-iteam .teamiteam {
+    background: #004362 !important;
+}
+.fullcounter {
+    border: 4px solid #004362 !important;
+    background-color: #04212F !important;
+}
+.overlay-1, .navfixed.scrolled, .navbar-wrapper .mainmenunav .cd-primary-nav  {
+    background: #d2c28b !important;
+    background-image: none !important;
+}
+
+
+.portfolio-item {
+    background:none !important;
+}
+.resume .resume-item .resume-info {
+    background: #004362 !important;
+}
+.resume .resume-item:nth-child(2) .resume-info {
+    background-color: #003953 !important;
+}
+.services-block, .navbar-wrapper .navfixed.bgactive {
+    background: #004362 !important;
+}
+.services .cont-services .servfix .services-block:hover {
+    background: #002d41 !important; 
+}
+
+.subtitle::before, li::before {
+    background:#0043628b !important;
+}
+
+body {
+    background-image: none !important;  
+}
+
+#header:before {
+    background: none !important;
+}
+
+
+/* DESIGN */
+
+.draw {
+    border: none !important;
+    
+    color: #fff !important;
+    text-transform: none !important;
+}
+.btn {
+    font-size: 25px !important;
+    font-weight: lighter !important;
+}
+
+.hvr-shutter-in-horizontal::before {
+    background: #04212F none repeat scroll 0 0;
+}
+.contact .socials-media ul li {
+    background: none !important;
+}
+.contact .socials-media ul li:hover {
+    background: #004362 !important;
+}
+
+
+
 .intro-profile-and-button {
     display:flex !important;
     position: absolute;
@@ -55,10 +146,7 @@ body {
     transition: 0.8s ease-out;
     cursor: crosshair;
 }
-.line-stripe-0, .line-stripe-1, .line-stripe-2, .line-stripe-3, .line-stripe-4 {
-    
-    background: rgba(255, 255, 255, 0.099) !important;
-}
+
 .logo-intro {
     max-width: 80vh;
     filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.493));
@@ -79,36 +167,18 @@ body {
     line-height: 1 !important;
     
 }
+
 .navfixed.scrolled {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.316);
     transition: 1s;
 }
-.overlay-1, .navfixed.scrolled {
-    background: #d2c28b !important;
-}
 
-.overlay-1 .screen {
-    color:#fff !important;
-    opacity:0.1;
-}
-.services-block {
-    background: #004362 !important;
-}
-.subtitle, .subtitle::before, .paye {
-    color: #004362 !important;
-}
-.subtitle::before, li::before {
-    background:#0043628b !important;
-}
+
 #typed-slide-1 {
     text-transform: none !important;
     font-size: 4rem !important;
 }
-.textfull {
-    color:#fff !important;
-    -webkit-text-stroke: 0 !important;
-    font-weight: 500 !important;
-}
+
 
 
 @media (max-width: 480px) {
