@@ -32,6 +32,7 @@ Updated: 2022-07-05 20:36:37
 }
 .mylogo img {
     width: 210px !important;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.462));
 }
 .navbar-wrapper .navfixed.bgactive {
     background: #d2c28b !important;
@@ -70,7 +71,14 @@ Updated: 2022-07-05 20:36:37
     -webkit-text-stroke: 0 !important;
     font-weight: 500 !important;
 }
-
+/* NOS OFFRES */
+.resume .resume-item .resume-info, .resume .resume-item:nth-child(02) .resume-info, .resume .resume-item:last-child .resume-info {
+    margin-bottom: 20px;
+    border-top: 3px solid #d2c28b !important;
+}
+.resume .resume-item:nth-child(05) .resume-info {
+    margin-top: 20px;
+}
 /* BACKGROUNDS */
 .about-img::before {
     display: none !important;

@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Keira Core
- * Description: Core plugin for Keira Theme
+ * Plugin Name: Keira Core Child
+ * Description: Plugin trombone perso
  * Author URI:  https://www.templatemonster.com/authors/inaikas/
  * Author:      inaikas
  * Version:     1.0

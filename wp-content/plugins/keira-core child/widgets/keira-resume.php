@@ -434,7 +434,7 @@ class keira_resume_widget extends \Elementor\Widget_Base {
 					<div class="resume-info text-left r-mb-30">
 						<h4 class="maintitle"><?php echo $settings['education_main_title'] ?></h4>
 						<p class="separator"><?php echo $settings['education_text'] ?></p>
-						<div class="res-line"></div>
+						
 						<ul class="res-list">
 						    <?php foreach ( $settings['education_list'] as $item ) : ?>
 							<li>
@@ -449,7 +449,7 @@ class keira_resume_widget extends \Elementor\Widget_Base {
 					<div class="resume-info text-left">
 						<h4 class="maintitle"><?php echo $settings['equipment_main_title'] ?></h4>
 						<p class="separator"><?php echo $settings['equipment_text'] ?></p>
-						<div class="res-line"></div>
+						
 						<ul class="res-list">
 						    <?php foreach ( $settings['equipment_list'] as $item ) : ?>
 							<li>
@@ -464,7 +464,7 @@ class keira_resume_widget extends \Elementor\Widget_Base {
 					<div class="resume-info text-left">
 						<h4 class="maintitle"><?php echo $settings['ajout_main_title'] ?></h4>
 						<p class="separator"><?php echo $settings['ajout_text'] ?></p>
-						<div class="res-line"></div>
+						
 						<ul class="res-list">
 						    <?php foreach ( $settings['ajout_list'] as $item ) : ?>
 							<li>
@@ -479,7 +479,7 @@ class keira_resume_widget extends \Elementor\Widget_Base {
 					<div class="resume-info text-left">
 						<h4 class="maintitle"><?php echo $settings['ajout2_main_title'] ?></h4>
 						<p class="separator"><?php echo $settings['ajout2_text'] ?></p>
-						<div class="res-line"></div>
+						
 						<ul class="res-list">
 						    <?php foreach ( $settings['ajout2_list'] as $item ) : ?>
 							<li>
@@ -494,7 +494,7 @@ class keira_resume_widget extends \Elementor\Widget_Base {
 					<div class="resume-info text-left">
 						<h4 class="maintitle"><?php echo $settings['ajout3_main_title'] ?></h4>
 						<p class="separator"><?php echo $settings['ajout3_text'] ?></p>
-						<div class="res-line"></div>
+						
 						<ul class="res-list">
 						    <?php foreach ( $settings['ajout3_list'] as $item ) : ?>
 							<li>
