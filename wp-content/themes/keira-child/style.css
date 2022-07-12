@@ -22,7 +22,29 @@ Updated: 2022-07-05 20:36:37
 .header-content span{
     text-transform: none !important;
 }
+/* NAVBAR */
+.fullcontainer {
+    align-items: flex-start !important;
+}
+.cd-nav-trigger {
+    
+    top: 20px !important;
+}
+.mylogo img {
+    width: 210px !important;
+}
+.navbar-wrapper .navfixed.bgactive {
+    background: #d2c28b !important;
+}
 
+/* HEADER */
+.breadcrumb-header {
+    background: #d2c28b !important;
+    
+}
+.title-header h1 {
+    font-weight: 600 !important;
+}
 
 /* COLORS */
 .separator {
@@ -79,7 +101,7 @@ Updated: 2022-07-05 20:36:37
 .resume .resume-item:nth-child(2) .resume-info {
     background-color: #003953 !important;
 }
-.services-block, .navbar-wrapper .navfixed.bgactive {
+.services-block{
     background: #004362 !important;
 }
 .services .cont-services .servfix .services-block:hover {
@@ -98,6 +120,16 @@ body {
     background: none !important;
 }
 
+/* Contact */
+.infcontactfull {
+    border: none !important;
+    background-color: #004362 !important;
+}
+
+.contact-block span {
+    color: #fff !important;
+    text-transform: none !important;
+}
 
 /* DESIGN */
 
